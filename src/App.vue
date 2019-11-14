@@ -1,32 +1,35 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <v-row>
+        <v-col cols="2">
+          <v-btn text @click="pushToRoute('home')">Usuario</v-btn>
+        </v-col>
+        <v-col cols="2">
+          <v-btn text @click="pushToRoute('about')"> Curso</v-btn>
+        </v-col>
+      </v-row>
+    </v-app-bar>
+    <v-content>
+      <router-view/>
+    </v-content>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
-</style>
+<script>
+export default {
+  name: 'App',
+  data: () => ({
+    //
+  }),
+  methods: {
+    pushToRoute(value) {
+      this.$router.push({ name: value });
+    },
+  },
+};
+</script>

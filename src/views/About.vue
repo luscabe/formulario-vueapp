@@ -1,5 +1,19 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <Form :form="curso" />
   </div>
 </template>
+<script>
+import Form from '../components/Form.vue';
+import curso from '../helper/curso.json';
+
+export default {
+  name: 'FormularioCurso',
+  components: {
+    Form,
+  },
+  data: () => ({
+    curso,
+  }),
+};
+</script>

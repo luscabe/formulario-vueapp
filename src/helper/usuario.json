@@ -1,0 +1,60 @@
+{
+    "title": "Cadastro de Usuário",
+    "campos": [
+        {
+            "component": "v-text-field",
+            "placeholder": "Nome",
+            "model": "name",
+            "xsSize": 8
+        },
+        {
+            "component": "v-text-field",
+            "placeholder": "Idade",
+            "model": "age",
+            "xsSize": 4
+        },
+        {
+            "component": "v-text-field",
+            "placeholder": "Profissão",
+            "model": "profission",
+            "xsSize": 4
+        },
+        {
+            "component": "v-text-field",
+            "placeholder": "Telefone",
+            "model": "phoneNumber",
+            "xsSize": 4
+        },
+        {
+            "component": "v-text-field",
+            "placeholder": "CPF",
+            "model": "cpf",
+            "xsSize": 4
+        },
+        {
+            "component": "v-select",
+            "placeholder": "Sexo",
+            "model": "sex",
+            "items": ["Masculino", "Feminino", "Outros"],
+            "xsSize": 4
+        },
+        {
+            "component": "v-text-field",
+            "placeholder": "Endereço",
+            "model": "address",
+            "xsSize": 8
+        },
+        {
+            "component": "v-text-field",
+            "placeholder": "Cidade",
+            "model": "city",
+            "xsSize": 6
+        },
+        {
+            "component": "v-text-field",
+            "placeholder": "Nacionalidade",
+            "model": "nacionality",
+            "xsSize": 6
+        }
+    ]
+}

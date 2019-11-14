@@ -1,0 +1,35 @@
+{
+    "title": "Cadastro de Curso",
+    "campos": [
+        {
+            "component": "v-text-field",
+            "placeholder": "Nome da instituição",
+            "model": "institute",
+            "xsSize": 4
+        },
+        {
+            "component": "v-text-field",
+            "placeholder": "Data de entrada",
+            "model": "initial_date",
+            "xsSize": 4
+        },
+        {
+            "component": "v-text-field",
+            "placeholder": "Data de conclusão",
+            "model": "final_date",
+            "xsSize": 4
+        },
+        {
+            "component": "v-text-field",
+            "placeholder": "Tempo de curso",
+            "model": "course_time",
+            "xsSize": 4
+        },
+        {
+            "component": "v-text-field",
+            "placeholder": "Cidade da universidade",
+            "model": "location",
+            "xsSize": 4
+        }
+    ]
+}
