@@ -30,6 +30,13 @@
             "placeholder": "Cidade da universidade",
             "model": "location",
             "xsSize": 4
+        },
+        {
+            "component": "v-checkbox",
+            "placeholder": "É bolsista?",
+            "label": "É bolsista?",
+            "model": "bolsista",
+            "xsSize": 4
         }
     ]
 }

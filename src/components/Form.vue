@@ -1,5 +1,5 @@
 <template>
-  <v-container grid-list-xl>
+  <v-container grid-list-md>
     <v-card class="pa-5">
       <v-card-title>
         {{form.title}}
@@ -22,11 +22,16 @@
                 :placeholder="field.placeholder"
                 :v-mask="field.mask"
                 :items="field.items"
+                :label="field.label"
+                v-model="payload[field.model]"
               />
             </v-col>
           </v-row>
         </v-layout>
       </v-card-text>
+      <v-card-actions>
+        <v-btn text @click="sendsDataToForm">Enviar Informações</v-btn>
+      </v-card-actions>
     </v-card>
   </v-container>
 </template>
@@ -38,6 +43,14 @@ export default {
   name: 'HelloWorld',
   directives: {
     mask,
+  },
+  data: () => ({
+    payload: {},
+  }),
+  methods: {
+    sendsDataToForm() {
+      this.$emit('valores', this.payload);
+    },
   },
   props: {
     form: {
