@@ -18,9 +18,18 @@
               class="py-0"
             >
               <component
+                v-if="field.mask"
                 :is="field.component"
                 :placeholder="field.placeholder"
-                :v-mask="field.mask"
+                :items="field.items"
+                v-mask="field.mask"
+                :label="field.label"
+                v-model="payload[field.model]"
+              />
+              <component
+                v-else
+                :is="field.component"
+                :placeholder="field.placeholder"
                 :items="field.items"
                 :label="field.label"
                 v-model="payload[field.model]"
@@ -48,6 +57,9 @@ export default {
     payload: {},
   }),
   methods: {
+    teste(mascara) {
+      return mascara || false;
+    },
     sendsDataToForm() {
       this.$emit('valores', this.payload);
     },

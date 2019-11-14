@@ -23,12 +23,14 @@
             "component": "v-text-field",
             "placeholder": "Telefone",
             "model": "phoneNumber",
+            "mask": "(##) ##### - ####",
             "xsSize": 4
         },
         {
             "component": "v-text-field",
             "placeholder": "CPF",
             "model": "cpf",
+            "mask": "###.###.###-##",
             "xsSize": 4
         },
         {
