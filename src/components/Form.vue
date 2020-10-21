@@ -49,7 +49,7 @@
 import { mask } from 'vue-the-mask';
 
 export default {
-  name: 'HelloWorld',
+  name: 'Form',
   directives: {
     mask,
   },
@@ -57,9 +57,6 @@ export default {
     payload: {},
   }),
   methods: {
-    teste(mascara) {
-      return mascara || false;
-    },
     sendsDataToForm() {
       this.$emit('valores', this.payload);
     },

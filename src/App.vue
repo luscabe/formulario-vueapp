@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app class="form-vue">
     <v-app-bar
       app
       color="primary"
@@ -33,3 +33,7 @@ export default {
   },
 };
 </script>
+<style lang="sass">
+  html
+    overflow-y: hidden !important
+</style>

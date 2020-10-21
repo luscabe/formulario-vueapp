@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="visibility" >
+  <v-dialog width="600" v-model="visibility" >
     <v-card>
       <v-card-text>
         <v-container class="pa-3">
